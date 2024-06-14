@@ -4,7 +4,7 @@ import React, {  useState } from 'react';
 // import Rotas from './routes';
 import './style.css';
 
-function App() {
+function Placar() {
   const [pontuacao, setPontuacao] = useState(0);
   const [pontuacaoAlta, setPontuacaoAlta] = useState(0);
   const [mostrarHistorico, setMostrarHistorico] = useState(false);
@@ -60,4 +60,4 @@ function App() {
     </div>
   );
 }
-export default App;
+export default Placar;

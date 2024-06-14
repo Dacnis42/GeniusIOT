@@ -18,10 +18,15 @@ export const registrarNome = async (nome) => {
     })
   }
   
+  export const Historico = async () => {
+    const response = await fetch('/ranking');
+    return response.json();
+  };
+  
 
-export const Historico = async (pontuacao) => {
-    const pontos = await fetch ("/pontuacao");
-    return Response.json();
+// export const Historico = async (pontuacao) => {
+//     const pontos = await fetch ("/pontuacao");
+//     return Response.json();
     
-}
+// }
 

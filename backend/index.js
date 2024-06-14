@@ -133,7 +133,7 @@
   //Coleta as informações dos jogadores no banco de dados
   app.get('/ranking', async (req, res) => {
       try {
-          const [ranking] = await db.query('SELECT * FROM JOGADOR order by pontuacao desc');
+          const [ranking] = await db.query('SELECT NICKNAME, PONTUACAO FROM JOGADOR order by pontuacao desc');
           res.json(ranking);
       }
       catch (error) {

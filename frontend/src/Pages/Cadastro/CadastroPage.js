@@ -43,6 +43,7 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Form, Label, Input, FormGroup, Button } from 'reactstrap';
 import { registrarNome } from '../../api';
+import './styless.css'; 
 
 
 function CadastroPage() {
@@ -51,22 +52,17 @@ function CadastroPage() {
   const handleRegistration = async (e) => {
     e.preventDefault();
 
-    const nicknameTratada = nickname.trim().replace(/\s+/g, ' ');
-    setNickname(nickname.trim().replace(/\s+/g, ' '));
-    if (nicknameTratada.length < 3) {
-      alert("Mínimo de 3 caracteres para o nickname!");
-      return;
-    }
+    setNickname(nickname)
 
-    await registrarNome({ nickname: nicknameTratada });
+    await registrarNome({ nickname});
     setNickname('');
   };  
 
   return (
     
     <div className="App">
-      <h1>Informe o seu nickname para iniciar!</h1>
-      <Form className="form-centered col-md-7" onSubmit={handleRegistration}>
+      <h1>Digite o seu nome para iniciar o jogo!</h1>
+      <Form className="form-centered col-md-12" onSubmit={handleRegistration}>
         <FormGroup>
           <Label for="exampleName" hidden>
             Nome
@@ -74,17 +70,17 @@ function CadastroPage() {
           <Input
             style={{ marginTop: '60px' }}
             id="exampleName"
-            placeholder="nickname (min 3 caracteres)"
+            placeholder="informe o nome"
             value={nickname}
             type="text"
             onChange={(e) => setNickname(e.target.value)}
           />
         </FormGroup>
-        <Button type="submit">
+        <Button color='warning' type="submit">
           Enviar
         </Button>
-        <Button href="/Ranking" style={{ marginLeft: '20px' }}>
-          Classificação
+        <Button color='warning' href="/Ranking" style={{ marginLeft: '20px' }}>
+          Ranking
         </Button>
       </Form>
     </div>
