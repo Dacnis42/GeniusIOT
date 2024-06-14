@@ -1,0 +1,151 @@
+.background {
+    background-image: url('https://images.pexels.com/photos/194511/pexels-photo-194511.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+  
+  
+.scoreboard {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+    border: 8px solid #fff;
+    border-radius: 20px;
+    padding: 20px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 60px;
+  }
+  
+  
+.form-container {
+    width: 400px;
+    padding: 30px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  
+  
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 80px;
+  }
+  
+  
+  h1 {
+    color: #fff;
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+  
+  
+  .score {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  
+  .high-score {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  
+  .buttons {
+    margin-top: 40px;
+  }
+  
+  
+  .color-button {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    border: none;
+    border-radius: 75px;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  
+  .info {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 60px;
+  }
+  
+  
+  .game-over {
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+  
+  
+  .game-over p {
+    margin: 40px 0;
+  }
+  
+  .restart-button:hover {
+    background-color: #45a049;
+  }
+  .restart-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 40px;
+    font-size: 28px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .historico h2 {
+    margin-top: 0;
+  }
+  
+  
+  .historico ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  
+  .historico li {
+    margin-bottom: 10px;
+  }
+  .historico {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    max-height: 80%;
+    overflow-y: auto;
+  }
+  
+  .historico button:hover {
+    background-color: #45a049;
+  }
+  .historico button {
+    margin-top: 20px;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
